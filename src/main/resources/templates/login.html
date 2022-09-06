@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Piloto</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/image/favicon.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <style>
+      .login-background{
+        height: 100vh;
+        background-image: url("https://blog.humberseguros.com.br/wp-content/uploads/2019/09/depositphotos-70436575-l-2015.jpg");
+        background-size: cover;
+      }
+      .login-form {
+        width: 100%;
+        height: 100vh;
+      }
+      .login-form form {
+        margin-bottom: 15px;
+        padding: 30px;
+        position: relative;
+        top: 30%;
+      }
+      .login-form h2 {
+        margin: 0 0 15px;
+      }
+      .form-control,
+      .login-btn {
+        border-radius: 2px;
+      }
+      .input-group-prepend .fa {
+        font-size: 18px;
+      }
+      .login-btn {
+        font-size: 15px;
+        font-weight: bold;
+        min-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row m-0">
+      <div class="d-none d-md-block col-md-6 p-0 login-background"></div>
+      <div class="col-md-6 p-0 login-form ">
+        <form th:action="@{/login}" method="post">
+          <img class="my-5 mx-auto d-block" src="/image/siva.png">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <span class="oi oi-person"></span>
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                placeholder="Usuário"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <span class="oi oi-key"></span>
+                </span>
+              </div>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Senha"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark login-btn btn-block">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

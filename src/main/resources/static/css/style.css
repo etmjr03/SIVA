@@ -1,0 +1,137 @@
+/*
+ * Base structure
+ */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	padding-left: 0;
+}
+.btn{
+	border-radius: 50rem!important;
+}
+.btn-border-right{
+	border-radius: 0 !important;
+	border-bottom-right-radius: 50rem !important;
+	border-top-right-radius: 50rem !important;
+}
+
+.input-border-left{
+	border-bottom-left-radius: 50rem !important;
+	border-top-left-radius: 50rem !important;
+}
+
+/* 
+ * text
+ */
+.vermelho {
+	color: #ba5959 !important;
+}
+.bg-vermelho {
+	background-color: #ba5959 !important;
+}
+
+/* 
+ * banner principal
+ */
+#bg-jumbotron {
+	background-image: url("https://cdn.wizard.com.br/wp-content/uploads/2021/04/16152147/ambientes-de-trabalho-em-ingles.jpg");
+	background-size: cover;
+}
+
+#banner-principal {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*
+ * main layout
+ */
+.layout-main {
+	display: flex;
+	min-height: calc(100vh - 70px);
+	overflow: hidden;
+	justify-content: center;
+}
+
+/*
+ * Content
+ */
+.layout-content {
+	width: 100%;
+	padding-top: 0px;
+}
+
+.container {
+	width: 100%;
+	padding-top: 20px;
+}
+
+/*
+ * nav-pills home
+ */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	color: #fff;
+	background-color: #1e94d2;
+}
+
+/*
+ * toogle do navbar do menu
+ */
+.navbar-toggle {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*
+ * Footer
+ */
+.layout-footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	height: 50px;
+	border-top: 1px solid #eeeeee;
+}
+
+.footer-copy {
+	font-size: 92%;
+	display: block;
+	color: #777777;
+	text-align: center;
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-signin .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
